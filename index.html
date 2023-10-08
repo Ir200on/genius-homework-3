@@ -154,9 +154,24 @@
                    <br> та отримайте подарунок</h1>
 
                 <form>
-                <input type="text" id="name" name="name" placeholder="Ваше ім'я та прізвище">
-                <input type="text" id="phone-number" name="phone-number" placeholder="Ваш номер телефону">
-                <input type="email" id="email" name="email" placeholder="Ваша електронна пошта">
+                <input type="text" 
+                id="name" name="name" 
+                placeholder="Ваше ім'я та прізвище" required
+                minlength="2" 
+                maxlength="20"
+                pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$">
+
+                <input type="text" 
+                id="phone-number" 
+                name="phone-number" 
+                placeholder="Ваш номер телефону" required
+                pattern="^\+[0-9]{12}">
+
+                <input type="email" 
+                id="email" name="email" 
+                placeholder="Ваша електронна пошта" required
+                pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})">
+
                 <button>Записатись безкоштовно</button>
                 <p>Натискаючи на кнопку я погоджуюсь <br><span>з політикою конфіденційності</span></p>
                 </form>
@@ -221,10 +236,25 @@
 
      <div class="main_register">
         <form>
-            <input type="text" id="name" name="name" placeholder="Ваше ім'я та прізвище">
-            <input type="text" id="phone-number" name="phone-number" placeholder="Ваш номер телефону">
-            <input type="email" id="email" name="email" placeholder="Ваша електронна пошта">
-            <button>Записатись безкоштовно</button>
+            <input type="text" 
+            id="name" name="name" 
+            placeholder="Ваше ім'я та прізвище" required 
+            minlength="2" 
+            maxlength="20"
+            pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$">
+
+            <input type="text" 
+            id="phone-number" 
+            name="phone-number" 
+            placeholder="Ваш номер телефону" required
+            pattern="^\+[0-9]{12}">
+
+            <input type="email" 
+            id="email" name="email" 
+            placeholder="Ваша електронна пошта" required
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})">
+
+            <button type="submit">Записатись безкоштовно</button>
             <p>Натискаючи на кнопку я погоджуюсь <br><span>з політикою конфіденційності</span></p>
         </form>
     </div>
